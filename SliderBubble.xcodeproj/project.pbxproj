@@ -22,6 +22,7 @@
 		2AC1DAC218B3F155002C3E91 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2AC1DAC018B3F155002C3E91 /* InfoPlist.strings */; };
 		2AC1DAC418B3F155002C3E91 /* SliderBubbleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC1DAC318B3F155002C3E91 /* SliderBubbleTests.m */; };
 		2AC1DACF18B41280002C3E91 /* TriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC1DACE18B41280002C3E91 /* TriangleView.m */; };
+		2AC1DAD218B415EC002C3E91 /* BubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC1DAD118B415EC002C3E91 /* BubbleView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		2AC1DAC318B3F155002C3E91 /* SliderBubbleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SliderBubbleTests.m; sourceTree = "<group>"; };
 		2AC1DACD18B41280002C3E91 /* TriangleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriangleView.h; sourceTree = "<group>"; };
 		2AC1DACE18B41280002C3E91 /* TriangleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriangleView.m; sourceTree = "<group>"; };
+		2AC1DAD018B415EC002C3E91 /* BubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BubbleView.h; sourceTree = "<group>"; };
+		2AC1DAD118B415EC002C3E91 /* BubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BubbleView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,8 +123,7 @@
 				2AC1DAAA18B3F155002C3E91 /* Main.storyboard */,
 				2AC1DAAD18B3F155002C3E91 /* ViewController.h */,
 				2AC1DAAE18B3F155002C3E91 /* ViewController.m */,
-				2AC1DACD18B41280002C3E91 /* TriangleView.h */,
-				2AC1DACE18B41280002C3E91 /* TriangleView.m */,
+				2AC1DAD318B415F1002C3E91 /* Views */,
 				2AC1DAB018B3F155002C3E91 /* Images.xcassets */,
 				2AC1DA9F18B3F155002C3E91 /* Supporting Files */,
 			);
@@ -155,6 +157,17 @@
 				2AC1DAC018B3F155002C3E91 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2AC1DAD318B415F1002C3E91 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2AC1DACD18B41280002C3E91 /* TriangleView.h */,
+				2AC1DACE18B41280002C3E91 /* TriangleView.m */,
+				2AC1DAD018B415EC002C3E91 /* BubbleView.h */,
+				2AC1DAD118B415EC002C3E91 /* BubbleView.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +269,7 @@
 			files = (
 				2AC1DAAF18B3F155002C3E91 /* ViewController.m in Sources */,
 				2AC1DAA918B3F155002C3E91 /* AppDelegate.m in Sources */,
+				2AC1DAD218B415EC002C3E91 /* BubbleView.m in Sources */,
 				2AC1DACF18B41280002C3E91 /* TriangleView.m in Sources */,
 				2AC1DAA518B3F155002C3E91 /* main.m in Sources */,
 			);

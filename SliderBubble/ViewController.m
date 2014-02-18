@@ -42,6 +42,7 @@
     CGFloat viewWidth = CGRectGetWidth(self.slider.frame);
     CGFloat viewMinX = CGRectGetMinX(self.slider.frame);
     CGFloat viewMaxX = CGRectGetMaxX(self.slider.frame);
+    CGFloat padding = 6;
     
     CGFloat bubbleWidth = CGRectGetWidth(self.bubbleView.frame);
     CGFloat tipWidth = CGRectGetWidth(self.tipView.frame);
@@ -61,12 +62,12 @@
     
     tipFrame.origin.x = ((viewWidth * sender.value) + viewMinX) - (tipWidth / 2);
     
-    if (tipFrame.origin.x <= viewMinX) {
-        tipFrame.origin.x = viewMinX;
+    if (tipFrame.origin.x <= (viewMinX + padding)) {
+        tipFrame.origin.x = (viewMinX + padding);
     }
     
-    if (tipFrame.origin.x >= (viewMaxX-tipWidth)) {
-        tipFrame.origin.x = (viewMaxX-tipWidth);
+    if (tipFrame.origin.x >= ((viewMaxX-padding)-tipWidth)) {
+        tipFrame.origin.x = ((viewMaxX-padding)-tipWidth);
     }
     
     self.bubbleView.frame = bubbleFrame;
